@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vikas To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vikas'S &ensp;TO-DO-LIST</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add new task">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <div class="sections">
+            <div class="pending-section">
+                <h2>Pending</h2>
+                <ul id="pendingTasks" class="task-list"></ul>
+            </div>
+            <div class="completed-section">
+                <h2>Completed</h2>
+                <ul id="completedTasks" class="task-list"></ul>
+            </div>
+        </div>
+        <div class="buttons-container">
+            <button onclick="sortTasksByName()">Sort by Name</button>
+            <button onclick="sortTasksByDate()">Sort by Date</button>
+            <button onclick="clearTasks()" class="clear-button">Clear All</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
